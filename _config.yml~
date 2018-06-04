@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ppenchev"
+title                    : "Site Title"
 title_separator          : "-"
-name                     : "Plamen Penchev"
-description              : "Just another GoT loving wannabe software engineer."
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -100,11 +100,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Plamen Penchev"
+  name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Just another GoT loving wannabe Software Engineer."
-  location         : "Berlin, Germany"
-  email            :  ppenchev73@gmail.com
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
+  email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -113,7 +113,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : https://github.com/PPenchevHub
+  github           :
   gitlab           :
   google_plus      :
   keybase          :
