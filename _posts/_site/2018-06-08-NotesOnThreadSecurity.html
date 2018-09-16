@@ -1,0 +1,69 @@
+<p><b>What’s thread safety?</b></p>
+
+<ul>
+  <li>Mechanisms and Methods to guarantee that parts of a programm, which is divided into many threads run corectly and without any unexpected side effects.</li>
+  <li>Scheduling and Interleaving of threads shouldn’t make a difference, and the threads can complete their work without errors and with the expected behaviour.</li>
+</ul>
+
+<h3>Race Conditions</h3>
+
+<ul>
+  <li>The result of an operation depends on the timing and order of events in a programm</li>
+  <li>Special case is the <b>Data Race</b> where multiple parallel threads want access to a shared variable at the same time which leads to unxpected results</li>
+</ul>
+
+<ul><b>Types of Race Conditions</b>
+<li>Read-Modify-Write - parallel running threads change the value of a shared variable based on the previous value of the same variable
+
+example: 
+'''java
+public class Main {
+
+	private int number;
+
+	private void incrementNumber() {
+		number++;
+
+	}
+
+	private int getNumber() {
+		return number;
+
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		final Main unsafe = new Main();
+
+		for (int i = 0; i &lt; 1000; i++) {
+
+			new Thread(new Runnable() {
+
+				@Override
+				public void run() {
+					try {
+						Thread.sleep((int)(Math.random()*100));
+					} catch (Exception e) {}
+						unsafe.incrementNumber();
+
+					
+				}
+			}, "T" + i).start();
+
+		}
+		Thread.sleep(1000);
+		System.out.println("Final number should be 1000 : " + unsafe.getNumber());
+	}
+
+}
+
+ 
+'''
+
+
+
+</li>
+
+<li></li>
+
+</ul>
+
