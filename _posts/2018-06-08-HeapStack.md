@@ -5,7 +5,7 @@ date:   2018-05-07
 categories: 
 ---
 
-
+What are those things?
 <img src="https://steemitimages.com/0x0/https://i.stack.imgur.com/HOY4C.png"/>
 <h4>https://steemit.com/programming/@drifter1/programming-assembly-heap-memory-allocation</h4>
 
