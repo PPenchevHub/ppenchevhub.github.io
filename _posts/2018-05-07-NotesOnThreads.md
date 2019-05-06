@@ -8,7 +8,7 @@ categories:
 
 <p>Concurrency VS Parallelism
 <ol>
-<li>Tasks are called <b>concurrent</b> when they can run completely independetly from each other. This icludes Time-Slicing, Interleaving or parallel to each other </li>
+<li>Tasks are called <b>concurrent</b> when they can run completely independetly from each other. This includes Time-Slicing, Interleaving or parallel to each other </li>
 <li>When tasks run independetly from each other at the exact same time, we can say they run <b>parallel</b> to eachother.This excludes time slicing then. </li>
 </ol>
 
